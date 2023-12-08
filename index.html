@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/theme.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="" />
+        <script
+            src="https://kit.fontawesome.com/fbff4fbf4f.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Mina Guevara</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header id="top">
+            <div class="mobile-header">
+                <div class="mobile-menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav class="mobile-menu">
+                    <ul class="nav-bar">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <li id="logo">mina <br />guevara.</li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="html/projects.html">Projects</a></li>
+                        <!-- <li><a href="html/resources.html">Resources</a></li> -->
+                        <li><a href="html/contact.html">Contact</a></li>
+                        <li id="moon">
+                            <label class="switch">
+                                <input
+                                    type="checkbox"
+                                    id="darkModeToggleMobile"
+                                />
+                                <span class="slider"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="desktop-header">
+                <span id="logo">mina <br />guevara.</span>
+                <nav class="desktop-menu">
+                    <ul class="nav-bar">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="html/projects.html">Projects</a></li>
+                        <!-- <li><a href="html/resources.html">Resources</a></li> -->
+                        <li><a href="html/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <h1>
+                I am a <br />
+                <div id="container">
+                    <span id="text1"></span>
+                    <span id="text2"></span>
+                </div>
+
+                <svg id="filters">
+                    <defs>
+                        <filter id="threshold">
+                            <feColorMatrix
+                                in="SourceGraphic"
+                                type="matrix"
+                                values="1 0 0 0 0
+                                                    0 1 0 0 0
+                                                    0 0 1 0 0
+                                                    0 0 0 255 -140"
+                            />
+                        </filter>
+                    </defs>
+                </svg>
+            </h1>
+            <div class="gradient"></div>
+        </section>
+
+        <!-- Line Pattern -->
+        <div class="pattern-vertical-lines-xl">
+            <!-- About -->
+            <section class="about" id="about">
+                <div class="about-header">
+                    <img src="assets/img/pp.png" />
+                    <div class="title">
+                        <h2 class="gopher">
+                            mina <br />
+                            guevara
+                        </h2>
+                        <h5>coder</h5>
+                    </div>
+                </div>
+
+                <p class="about-text">
+                    I'm a coder at my core, with emphasis on full-stack and data
+                    analysis, complemented by a deep appreciation for design.
+                    What sets me apart is my belief in approaching problems from
+                    multiple angles – taking into account the bigger picture
+                    while paying meticulous attention to detail. By seamlessly
+                    integrating user-centric design principles with cutting-edge
+                    coding techniques, I strive for holistic solutions that not
+                    only meet objectives but exceed expectations.
+                </p>
+
+                <div class="chart" id="chart-container">
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                    <div class="legend-container">
+                        <div class="legend">
+                            <p>Dev</p>
+                            <div class="box" id="legDev"></div>
+                        </div>
+                        <div class="legend">
+                            <p>Analytics</p>
+                            <div class="box" id="legAnalytics"></div>
+                        </div>
+                        <div class="legend">
+                            <p>Design</p>
+                            <div class="box" id="legDesign"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Badges -->
+            <div class="badges">
+                <div class="badges-slide">
+                    <div class="badge" id="badgeLang">
+                        <img
+                            src="assets/img/badge-1.png"
+                            alt="A globe icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>10</span> <br />fluent languages <br />(code
+                            included, that is)
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="bandgeHours">
+                        <img
+                            src="assets/img/badge-2.png"
+                            alt="A round clock icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span id="daysCount">498</span> <br />days of code
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeProjects">
+                        <img
+                            src="assets/img/badge-3.png"
+                            alt="A computer monitor icon with a website icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>50+</span> <br />projects completed
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeLeet">
+                        <img
+                            src="assets/img/badge-4.png"
+                            alt="Two interlocking puzzle pieces in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>100+</span> <br />leet code <br />problems
+                            solved
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeViz">
+                        <img
+                            src="assets/img/badge-5.png"
+                            alt="A bar graph with an upward arrow in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>80+</span> <br />data visualizations
+                            <br />created
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeClean">
+                        <img
+                            src="assets/img/badge-6.png"
+                            alt="A broom and a folder with a pile of dust in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>150+</span> <br />processed and <br />scrubbed
+                            datasets
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeTutorials">
+                        <img
+                            src="assets/img/badge-7.png"
+                            alt="Person sitting in front of a screen with a play button in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>1000+</span> <br />hours of tutorials
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeCert">
+                        <img
+                            src="assets/img/badge-8.png"
+                            alt="An icon of a diploma with a ribbon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>10</span> <br />tech certificates
+                        </figcaption>
+                    </div>
+                </div>
+
+                <div class="badges-slide">
+                    <div class="badge" id="badgeLang">
+                        <img
+                            src="assets/img/badge-1.png"
+                            alt="A globe icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>10</span> <br />fluent languages <br />(code
+                            included, that is)
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="bandgeHours">
+                        <img
+                            src="assets/img/badge-2.png"
+                            alt="A round clock icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span id="daysCount">498</span> <br />days of code
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeProjects">
+                        <img
+                            src="assets/img/badge-3.png"
+                            alt="A computer monitor icon with a website icon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>50+</span> <br />projects completed
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeLeet">
+                        <img
+                            src="assets/img/badge-4.png"
+                            alt="Two interlocking puzzle pieces in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>100+</span> <br />leet code <br />problems
+                            solved
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeViz">
+                        <img
+                            src="assets/img/badge-5.png"
+                            alt="A bar graph with an upward arrow in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>80+</span> <br />data visualizations
+                            <br />created
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeClean">
+                        <img
+                            src="assets/img/badge-6.png"
+                            alt="A broom and a folder with a pile of dust in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>150+</span> <br />processed and <br />scrubbed
+                            datasets
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeTutorials">
+                        <img
+                            src="assets/img/badge-7.png"
+                            alt="Person sitting in front of a screen with a play button in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>1000+</span> <br />hours of tutorials
+                        </figcaption>
+                    </div>
+
+                    <div class="badge" id="badgeCert">
+                        <img
+                            src="assets/img/badge-8.png"
+                            alt="An icon of a diploma with a ribbon in a pink circle on a light green background"
+                        />
+                        <figcaption>
+                            <span>10</span> <br />tech certificates
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <section class="skills" id="skills">
+                <div class="skills-header">
+                    <h4>the gist</h4>
+                </div>
+
+                <div class="skills-container">
+                    <h5 class="category" id="sTech">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        TECH
+                    </h5>
+                    <p class="skill sTech">HTML5</p>
+                    <p class="skill sTech">CSS3</p>
+                    <p class="skill sTech">Responsive Web Design</p>
+                    <p class="skill sTech">JavaScript</p>
+                    <p class="skill sTech">JS Libraries</p>
+                    <p class="skill sTech">React</p>
+                    <p class="skill sTech">Node.js</p>
+                    <p class="skill sTech">ExpressJS</p>
+                    <p class="skill sTech">REST API</p>
+                    <p class="skill sTech">MongoDB</p>
+                    <p class="skill sTech">Git & Github</p>
+                    <p class="skill sTech">Java</p>
+                    <p class="skill sTech">Heroku</p>
+                </div>
+
+                <div class="skills-container">
+                    <h5 class="category" id="sData">
+                        DATA
+                        <i class="fa-solid fa-chart-line"></i>
+                    </h5>
+                    <p class="skill sData">Python</p>
+                    <p class="skill sData">Pandas</p>
+                    <p class="skill sData">Numpy</p>
+                    <p class="skill sData">Matplotlib</p>
+                    <p class="skill sData">Seaborn</p>
+                    <p class="skill sData">R</p>
+                    <p class="skill sData">MySQL</p>
+                    <p class="skill sData">PostgreSQL</p>
+                    <p class="skill sData">Tableau</p>
+                    <p class="skill sData">Spreadsheets</p>
+                    <p class="skill sData">Spark</p>
+                    <p class="skill sData">Hadoop</p>
+                </div>
+
+                <div class="skills-container">
+                    <h5 class="category" id="sDesign">
+                        <i class="fa-regular fa-object-ungroup"></i>
+                        DESIGN
+                    </h5>
+                    <p class="skill sDesign">UX/UI</p>
+                    <p class="skill sDesign">Photoshop</p>
+                    <p class="skill sDesign">After Effects</p>
+                    <p class="skill sDesign">InDesign</p>
+                    <p class="skill sDesign">Adobe XD</p>
+                    <p class="skill sDesign">Figma</p>
+                    <p class="skill sDesign">Framer</p>
+                    <p class="skill sDesign">Design Thinking</p>
+                    <p class="skill sDesign">Inclusive Design</p>
+                </div>
+
+                <div class="skills-container">
+                    <h5 class="category" id="traits">
+                        TRAITS
+                        <i class="fa-regular fa-user"></i>
+                    </h5>
+                    <p class="skill traits">Introvert</p>
+                    <p class="skill traits">Listener</p>
+                    <p class="skill traits">Adaptable</p>
+                    <p class="skill traits">Autodidact</p>
+                    <p class="skill traits">Fast-paced</p>
+                    <p class="skill traits">Proactive</p>
+                    <p class="skill traits">Empathetic</p>
+                    <p class="skill traits">Curious</p>
+                    <p class="skill traits">Logical</p>
+                    <p class="skill traits">Gritty</p>
+                    <p class="skill traits">Organized</p>
+                    <p class="skill traits">Meticulous</p>
+                </div>
+
+                <div class="skills-container">
+                    <h5 class="category" id="int">
+                        <i
+                            class="fa-regular fa-heart"
+                            style="transform: translateX(-1.1rem)"
+                        ></i>
+                        INTERESTS
+                    </h5>
+                    <p class="skill int">Technology</p>
+                    <p class="skill int">Traveling</p>
+                    <p class="skill int">Meditation</p>
+                    <p class="skill int">Pilates</p>
+                    <p class="skill int">The beach</p>
+                    <p class="skill int">Nature</p>
+                    <p class="skill int">TV</p>
+                    <p class="skill int">Films</p>
+                    <p class="skill int">Animation</p>
+                    <p class="skill int">Photography</p>
+                    <p class="skill int">Desserts</p>
+                    <p class="skill int">Chihuahuas</p>
+                </div>
+            </section>
+
+            <!-- Quote -->
+            <div class="quote"></div>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-email">
+                    <h1>
+                        <a href="" target="_blank">minaguevarac@gmail.com</a>
+                    </h1>
+                    <h1>
+                        <a href="" target="_blank">minaguevarac@gmail.com</a>
+                    </h1>
+                    <h1>
+                        <a href="" target="_blank">minaguevarac@gmail.com</a>
+                    </h1>
+                    <h1>
+                        <a href="" target="_blank">minaguevarac@gmail.com</a>
+                    </h1>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-left">
+                        <a href="https://github.com/minaguevara" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="www.linkedin.com/in/minaguevara" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/minagvc" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="footer-middle">
+                        <a href="#top">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                    </div>
+
+                    <div class="footer-right">
+                        <h5 class="footer-built-by">
+                            BUILT/DESIGNED BY YOURS TRULY
+                        </h5>
+                        <p class="footer-copyright">&copy; 2023 mina guevara</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="scripts/mobileMenu.js"></script>
+        <script src="scripts/desktopMenu.js"></script>
+        <script src="scripts/darkMode.js"></script>
+        <script src="scripts/hero.js"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+        <script src="scripts/chart.js"></script>
+        <script src="scripts/badges.js"></script>
+        <script src="scripts/skills.js"></script>
+        <script src="scripts/daysOfCode.js"></script>
+    </body>
+</html>

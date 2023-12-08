@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Thin.otf") format(opentype);
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-ExtraLight.otf") format(opentype);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Light.otf") format(opentype);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Regular.otf") format(opentype);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Medium.otf") format(opentype);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Demi.otf") format(opentype);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Bold.otf") format(opentype);
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Heavy.otf") format(opentype);
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Termina";
+    src: url("../assets/fonts/Termina-Black.otf") format(opentype);
+    font-weight: 900;
+}
+
+:root {
+    --light-pink: #fddde0;
+    --dark-pink: #f57b88;
+    --dark-green: #155958;
+    --hero: #fdedee;
+    
+    --bg: #fdedee;
+    --text: #155958;
+    --navbar: #f9edeb;
+    --navbar-hover: #32837d;
+    --navbar-active: #f57b88;
+    --navbar-scrolled: #9cd0c4;
+    --navbar-scrolledText: #32837d;
+    --mobile-navbar: #fddde0;
+    --mobile-navbarBg: #fecfd7;
+    --mobile-navbarText: #32837d;
+    --pages-navBar: #f57b88;
+    --skills-bg: #32837d;
+    --skills-shadow: rgba(0, 0, 0, 0.4);
+    --skills-header: #fddde0;
+    --skills-border: #155958;
+    --skills-text: #32837d;
+    --category: #cfeae3;
+    --skills-bottom: #fddde0;
+    --skill-bg1: #fec2cc;
+    --skill-bg2: #fddde0;
+    --footer-border: #f7a9b6;
+    --footer-hover: #f57b88;
+
+    --project: #EDD4D690;
+}
+
+.dark-mode {
+    --bg: #273a3a;
+    --text: #fdedee;
+    --navbar: #2b444490;
+    --navbar-hover: #fddde0;
+    --navbar-active: #f57b88;
+    --navbar-scrolled: #fddde0;
+    --navbar-scrolledText: #32837d;
+    --mobile-navbar: #fddde0;
+    --mobile-navbarBg: #fecfd7;
+    --mobile-navbarText: #155958;
+    --pages-navBar: #f7a9b6;
+    --skills-bg: #54ada3;
+    --skills-header: #fddde0;
+    --skills-border: #54ada3;
+    --skills-text: #54ada3;
+    --category: #cfeae3;
+    --skills-bottom: #fddde0;
+    --skill-bg1: #fec2cc;
+    --skill-bg2: #fddde0;
+    --category-text: #32837d;
+    --footer-border: #f7a9b6;
+    --footer-hover: #f57b88;
+
+    --project: #506464;
+}
