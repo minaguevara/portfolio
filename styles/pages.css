@@ -267,6 +267,10 @@ input:checked + .slider:before {
     transform: scale(1.5);
 }
 
+.fa-brands {
+    text-align: center;
+}
+
 .contact-form {
     margin: 3rem auto 0 auto;
     text-transform: uppercase;
