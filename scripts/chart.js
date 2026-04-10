@@ -10,30 +10,32 @@ if (window.innerWidth <= 768) {
 
     labelsDev = [
         "",
-        "JS",
-        "Responsive\nWeb Design",
-        "Front-End\nFrameworks",
-        "Version\nControl",
-        "API Development\n& Integration",
-        "Database Design\n& Management",
+        "Data\nModeling",
+        "Power BI\nDashboards",
+        "SQL &\nAzure",
+        "ETL\nPipelines",
+        "DAX &\nMeasures",
+        "Analytics\nEngineering",
     ];
+    
     labelsAnalytics = [
         "",
-        "Data\nVisualization",
-        "Data\nCleaning",
-        "EDA",
-        "Data\nInterpretation",
-        "Data\nReporting",
-        "Data\nMining",
+        "Machine\nLearning",
+        "NLP &\nLLMs",
+        "RAG\nPipelines",
+        "Time Series\nForecasting",
+        "Model\nDeployment",
+        "AI\nIntegration",
     ];
+    
     labelsDesign = [
         "",
-        "UX/UI",
-        "User\nResearch",
-        "User-Centered\nDesign",
-        "Accessibility\nGuidelines",
-        "Wireframing and\nPrototyping",
-        "Visual Design\nPrinciples",
+        "Workflow\nAutomation",
+        "Power\nAutomate",
+        "FastAPI",
+        "Python\nScripting",
+        "Process\nMapping",
+        "ROI\nAnalysis",
     ];
 
     dataDev = [9, 12, 9, 13, 11, 15];
@@ -46,30 +48,32 @@ if (window.innerWidth <= 768) {
 
     labelsDev = [
         "",
-        "JS",
-        "Responsive\nWeb Design",
-        "Front-End\nFrameworks",
-        "Version\nControl",
-        "API Development\n& Integration",
-        "Database Design\n& Management",
+        "Data\nModeling",
+        "Power BI\nDashboards",
+        "SQL &\nAzure",
+        "ETL\nPipelines",
+        "DAX &\nMeasures",
+        "Analytics\nEngineering",
     ];
+    
     labelsAnalytics = [
         "",
-        "Data\nVisualization",
-        "Data\nCleaning",
-        "EDA",
-        "Data\nInterpretation",
-        "Data\nReporting",
-        "Data\nMining",
+        "Machine\nLearning",
+        "NLP &\nLLMs",
+        "RAG\nPipelines",
+        "Time Series\nForecasting",
+        "Model\nDeployment",
+        "AI\nIntegration",
     ];
+    
     labelsDesign = [
         "",
-        "UX/UI",
-        "User\nResearch",
-        "User-Centered\nDesign",
-        "Accessibility\nGuidelines",
-        "Wireframing and\nPrototyping",
-        "Visual Design\nPrinciples",
+        "Workflow\nAutomation",
+        "Power\nAutomate",
+        "FastAPI",
+        "Python\nScripting",
+        "Process\nMapping",
+        "ROI\nAnalysis",
     ];
 
     dataDev = [7, 9, 12, 9, 13, 11, 15, 12];
@@ -84,7 +88,7 @@ const chart = new Chart(ctx, {
         labels: xAxis,
         datasets: [
             {
-                label: "Dev",
+                label: "Data",
                 data: dataDev,
                 tension: 0.5,
                 fill: true,
@@ -111,7 +115,7 @@ const chart = new Chart(ctx, {
                 },
             },
             {
-                label: "Analytics",
+                label: "AI & ML",
                 data: dataAnalytics,
                 tension: 0.5,
                 fill: true,
@@ -141,7 +145,7 @@ const chart = new Chart(ctx, {
                 },
             },
             {
-                label: "Design",
+                label: "Automation",
                 data: dataDesign,
                 tension: 0.5,
                 fill: true,

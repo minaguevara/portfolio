@@ -36,24 +36,21 @@ const elts = {
 };
 
 const texts = [
-    "Coder",
-    "software engineer",
-    "front-end developer",
-    "data\nanalyst",
-    "back-end developer",
-    "techie",
-    "Web Developer",
-    "business\nanalyst",
-    "full-stack developer",
-    //"Defender of\nEquality",
-    "design Enthusiast",
-    "digital nomad",
-    //"Defender of\nInclusivity",
-    "cinephile",
-    "life-long learner",
-    "dog\nmom",
-    "Problem solver",
-    "gemini"
+"data analyst",
+"BI developer",
+"analytics engineer",
+"AI systems builder",
+"data scientist",
+"automation specialist",
+"ML engineer\n(in training)",
+"power bi developer",
+"problem solver",
+"life-long learner",
+"AI enthusiast",
+"cinephile",
+"dog mom",
+"gemini",
+"retail data nerd",
 ];
 
 const morphTime = 1;
